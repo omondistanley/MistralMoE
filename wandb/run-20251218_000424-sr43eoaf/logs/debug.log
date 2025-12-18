@@ -1,0 +1,68 @@
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_setup.py:_flush():80] Current SDK version is 0.23.1
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_setup.py:_flush():80] Configure stats pid to 1079110
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_setup.py:_flush():80] Loading settings from /root/.config/wandb/settings
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_setup.py:_flush():80] Loading settings from /root/shit/wandb/settings
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_init.py:setup_run_log_directory():714] Logging user logs to /root/shit/wandb/run-20251218_000424-sr43eoaf/logs/debug.log
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to /root/shit/wandb/run-20251218_000424-sr43eoaf/logs/debug-internal.log
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_init.py:monkeypatch_ipython():633] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f21b8bc8470>
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_init.py:init():841] calling init triggers
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-12-18 00:04:24,050 INFO    MainThread:1079110 [wandb_init.py:init():889] starting backend
+2025-12-18 00:04:24,300 INFO    MainThread:1079110 [wandb_init.py:init():892] sending inform_init request
+2025-12-18 00:04:24,302 INFO    MainThread:1079110 [wandb_init.py:init():900] backend started and connected
+2025-12-18 00:04:24,334 INFO    MainThread:1079110 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2025-12-18 00:04:24,344 INFO    MainThread:1079110 [wandb_init.py:init():970] updated telemetry
+2025-12-18 00:04:24,373 INFO    MainThread:1079110 [wandb_init.py:init():994] communicating run to backend with 90.0 second timeout
+2025-12-18 00:04:24,810 INFO    MainThread:1079110 [wandb_init.py:init():1041] starting run threads in backend
+2025-12-18 00:04:24,878 INFO    MainThread:1079110 [wandb_run.py:_console_start():2521] atexit reg
+2025-12-18 00:04:24,878 INFO    MainThread:1079110 [wandb_run.py:_redirect():2369] redirect: wrap_raw
+2025-12-18 00:04:24,878 INFO    MainThread:1079110 [wandb_run.py:_redirect():2438] Wrapping output streams.
+2025-12-18 00:04:24,878 INFO    MainThread:1079110 [wandb_run.py:_redirect():2461] Redirects installed.
+2025-12-18 00:04:24,881 INFO    MainThread:1079110 [wandb_init.py:init():1081] run started, returning control to user process
+2025-12-18 00:04:25,032 INFO    MainThread:1079110 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-18 00:05:01,295 INFO    MainThread:1079110 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-18 00:05:01,295 INFO    MainThread:1079110 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-18 00:05:01,296 INFO    MainThread:1079110 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-18 00:05:13,382 INFO    MainThread:1079110 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-18 00:05:13,382 INFO    MainThread:1079110 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-18 00:05:15,885 INFO    MainThread:1079110 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-18 00:05:19,684 INFO    MainThread:1079110 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-18 00:05:19,684 INFO    MainThread:1079110 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-18 00:05:34,457 INFO    MainThread:1079110 [wandb_run.py:_finish():2287] finishing run omondistanley82-student/mistral-moe-variants/sr43eoaf
+2025-12-18 00:05:34,458 INFO    MainThread:1079110 [jupyter.py:save_ipynb():359] not saving jupyter notebook
+2025-12-18 00:05:34,458 INFO    MainThread:1079110 [wandb_init.py:_jupyter_teardown():618] cleaning up jupyter logic
+2025-12-18 00:05:34,681 INFO    MainThread:1079110 [wandb_run.py:_finish():2287] finishing run omondistanley82-student/mistral-moe-variants/sr43eoaf
+2025-12-18 00:05:34,682 INFO    MainThread:1079110 [jupyter.py:save_ipynb():359] not saving jupyter notebook
+2025-12-18 00:05:34,682 INFO    MainThread:1079110 [wandb_init.py:_jupyter_teardown():618] cleaning up jupyter logic
+2025-12-18 00:05:34,682 ERROR   MainThread:1079110 [wandb_init.py:init():1592] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1577, in init
+    run = wi.init(run_settings, run_config, run_printer)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 862, in init
+    self._wl.finish_all_active_runs()
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_setup.py", line 165, in finish_all_active_runs
+    run.finish()
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 445, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2275, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2295, in _finish
+    hook.call()
+  File "/opt/miniforge3/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 620, in _jupyter_teardown
+    ipython.events.unregister("pre_run_cell", self._pre_run_cell_hook)
+  File "/opt/miniforge3/lib/python3.12/site-packages/IPython/core/events.py", line 86, in unregister
+    raise ValueError('Function {!r} is not registered as a {} callback'.format(function, event))
+ValueError: Function <bound method _WandbInit._pre_run_cell_hook of <wandb.sdk.wandb_init._WandbInit object at 0x7f21b8bc8470>> is not registered as a pre_run_cell callback
+2025-12-18 00:12:07,195 INFO    wandb-AsyncioManager-main:1079110 [service_client.py:_forward_responses():80] Reached EOF.
+2025-12-18 00:12:07,195 INFO    wandb-AsyncioManager-main:1079110 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

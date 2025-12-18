@@ -1,0 +1,36 @@
+{
+  "os":  "Linux-5.15.0-161-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2025-12-13T21:19:29.801377Z",
+  "program":  "/root/shit/corrected-moe-FIXED-V2.ipynb",
+  "codePath":  "/root/shit/corrected-moe-FIXED-V2.ipynb",
+  "codePathLocal":  "corrected-moe-FIXED-V2.ipynb",
+  "email":  "omondistanley82@gmail.com",
+  "root":  "/root/shit",
+  "host":  "b7ec16139ff8",
+  "executable":  "/root/shit/.venv/bin/python",
+  "cpu_count":  48,
+  "cpu_count_logical":  96,
+  "gpu":  "NVIDIA H200 NVL",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "3803409584128",
+      "used":  "945992122368"
+    }
+  },
+  "memory":  {
+    "total":  "811168120832"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA H200 NVL",
+      "memoryTotal":  "150754820096",
+      "cudaCores":  16896,
+      "architecture":  "Hopper",
+      "uuid":  "GPU-502f75d4-f453-0689-7097-22f704e47527"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "5idoprmyza4ya0luelx5zjlg65el5lkj"
+}

@@ -1,0 +1,30 @@
+{
+  "accuracy": 0.27,
+  "top2_accuracy": 0.522,
+  "ece": 0.21232299804687496,
+  "flops": 3023656976384.0,
+  "tokens_per_second": 696.1478479371442,
+  "ms_per_token": 1.4364764653991877,
+  "samples_per_second": 2.3942352728612746,
+  "total_time": 20.88349485397339,
+  "total_params": 23483125760,
+  "active_params": 23483125760,
+  "trainable_params": 263458816,
+  "sparsity_ratio": 1.0,
+  "model_size_mb": 22646.508056640625,
+  "gpu_memory_allocated_gb": 108.41034173965454,
+  "gpu_memory_reserved_gb": 109.63671875,
+  "phase": "pre_train_only",
+  "config": {
+    "num_experts": 8,
+    "num_experts_per_tok": 2,
+    "router_jitter_noise": 0.0,
+    "router_aux_loss_coef": 0.001,
+    "expert_layers": "all",
+    "layer_indices": null,
+    "load_balancing_loss_coef": 0.01,
+    "experiment_name": "baseline_8x2",
+    "description": "Standard 8 experts, top-2 routing, all layers"
+  },
+  "timestamp": 1765661517.6725256
+}

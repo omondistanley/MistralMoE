@@ -1,0 +1,7 @@
+{"time":"2025-12-16T23:05:08.828944406Z","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-16T23:05:09.121504347Z","level":"INFO","msg":"stream: created new stream","id":"rjf8kx0k"}
+{"time":"2025-12-16T23:05:09.121573027Z","level":"INFO","msg":"handler: started","stream_id":"rjf8kx0k"}
+{"time":"2025-12-16T23:05:09.121622347Z","level":"INFO","msg":"stream: started","id":"rjf8kx0k"}
+{"time":"2025-12-16T23:05:09.121644147Z","level":"INFO","msg":"sender: started","stream_id":"rjf8kx0k"}
+{"time":"2025-12-16T23:05:09.121648667Z","level":"INFO","msg":"writer: started","stream_id":"rjf8kx0k"}
+{"time":"2025-12-17T00:57:08.185252208Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/omondistanley82-student/mistral-moe-variants/rjf8kx0k/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

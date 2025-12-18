@@ -1,0 +1,18 @@
+baseline eval
+Creating subject-specific example pools...
+WARNING: 'subject' column not found!
+Creating default pool from random samples...
+
+Running 5-shot evaluation on baseline model...
+(This will take longer due to longer context)
+Evaluating (5-shot): 100%|██████████| 1000/1000 [01:58<00:00,  8.43it/s]
+
+COMPARISON: 0-SHOT vs 5-SHOT (BASELINE MODEL)
+                  Metric 0-Shot 5-Shot Improvement
+                Accuracy 0.6790 0.2320     -44.70%
+          Top-2 Accuracy 0.8470 0.4580     -38.90%
+                     ECE 0.0292 0.6713      0.6422
+Throughput (samples/sec)  17.97   8.43       -9.54
+       Avg Latency (sec) 0.0556 0.1186      0.0630
+
+ 5-shot baseline evaluation complete!

@@ -1,0 +1,6 @@
+{"time":"2025-12-11T15:33:17.373931387Z","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-11T15:33:17.583881705Z","level":"INFO","msg":"stream: created new stream","id":"tarz3luk"}
+{"time":"2025-12-11T15:33:17.583931615Z","level":"INFO","msg":"handler: started","stream_id":"tarz3luk"}
+{"time":"2025-12-11T15:33:17.584070555Z","level":"INFO","msg":"stream: started","id":"tarz3luk"}
+{"time":"2025-12-11T15:33:17.584106295Z","level":"INFO","msg":"writer: started","stream_id":"tarz3luk"}
+{"time":"2025-12-11T15:33:17.584130835Z","level":"INFO","msg":"sender: started","stream_id":"tarz3luk"}

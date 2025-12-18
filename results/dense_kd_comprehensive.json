@@ -1,0 +1,17 @@
+{
+  "model_name": "dense_kd",
+  "accuracy": 0.654,
+  "top2_accuracy": 0.825,
+  "ece": 0.06631105914711954,
+  "flops": 8796093022208,
+  "tokens_per_second": 7537.8009476672505,
+  "ms_per_token": 0.1326646865501899,
+  "samples_per_second": 26.503290839517778,
+  "total_params": 3794014208,
+  "active_params": 3794014208,
+  "trainable_params": 41943040,
+  "sparsity_ratio": 1.0,
+  "model_size_mb": 4489.015869140625,
+  "gpu_memory_allocated_gb": 11.859084129333496,
+  "gpu_memory_reserved_gb": 15.744140625
+}

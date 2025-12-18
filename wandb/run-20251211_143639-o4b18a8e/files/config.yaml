@@ -1,0 +1,63 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            agmfskil4gq5pbzoz30ya8wx3n1urj1x:
+                codePath: /root/shit/MistralMOE (3).ipynb
+                codePathLocal: MistralMOE (3).ipynb
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "3803409584128"
+                        used: "653102948352"
+                email: omondistanley82@gmail.com
+                executable: /root/shit/.venv/bin/python
+                gpu: NVIDIA H200 NVL
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200 NVL
+                      uuid: GPU-502f75d4-f453-0689-7097-22f704e47527
+                host: b7ec16139ff8
+                memory:
+                    total: "811168120832"
+                os: Linux-5.15.0-161-generic-x86_64-with-glibc2.39
+                program: /root/shit/MistralMOE (3).ipynb
+                python: CPython 3.12.3
+                root: /root/shit
+                startedAt: "2025-12-11T14:36:39.962258Z"
+                writerId: agmfskil4gq5pbzoz30ya8wx3n1urj1x
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 71
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 71
+                - 98
+            "3":
+                - 2
+                - 13
+            "4": 3.12.3
+            "5": 0.23.1
+            "6": 4.57.3
+            "8":
+                - 1
+            "12": 0.23.1
+            "13": linux-x86_64

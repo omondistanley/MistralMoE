@@ -1,0 +1,7 @@
+{"time":"2025-12-16T15:04:07.682799154Z","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-16T15:04:07.893355723Z","level":"INFO","msg":"stream: created new stream","id":"jy3fwqrc"}
+{"time":"2025-12-16T15:04:07.893429743Z","level":"INFO","msg":"handler: started","stream_id":"jy3fwqrc"}
+{"time":"2025-12-16T15:04:07.893562832Z","level":"INFO","msg":"stream: started","id":"jy3fwqrc"}
+{"time":"2025-12-16T15:04:07.893571802Z","level":"INFO","msg":"writer: started","stream_id":"jy3fwqrc"}
+{"time":"2025-12-16T15:04:07.893581932Z","level":"INFO","msg":"sender: started","stream_id":"jy3fwqrc"}
+{"time":"2025-12-16T15:10:39.300423239Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/omondistanley82-student/MoE/jy3fwqrc/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}

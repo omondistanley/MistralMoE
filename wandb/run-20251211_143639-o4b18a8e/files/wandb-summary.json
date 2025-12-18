@@ -1,0 +1,1 @@
+{"_runtime":3037,"baseline/5shot_ece":0.6713203125,"baseline/5shot_improvement":-0.44700000000000006,"_timestamp":1.7654639192260206e+09,"_step":0,"_wandb":{"runtime":3037},"baseline/5shot_top2_accuracy":0.458,"baseline/0shot_accuracy":0.679,"baseline/5shot_accuracy":0.232}

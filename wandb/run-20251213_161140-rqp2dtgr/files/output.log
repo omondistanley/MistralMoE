@@ -1,0 +1,2781 @@
+RUNNING MOE VARIANT EXPERIMENTS
+
+======================================================================
+RUNNING EXPERIMENT: efficient_4x1
+======================================================================
+
+Description: Efficient: 4 experts, top-1 routing
+Configuration:
+  Experts: 4
+  Experts per token: 1
+  Layer placement: all
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.15s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 4
+  Experts per token: 1
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 32 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 51.80GB alloc / 51.93GB reserved
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 52.89GB alloc / 53.16GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 53.99GB alloc / 54.26GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 55.08GB alloc / 55.43GB reserved
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 56.17GB alloc / 56.58GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 57.26GB alloc / 57.74GB reserved
+  Layer 25/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 58.35GB alloc / 58.95GB reserved
+  Layer 29/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 4 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 59.44GB alloc / 60.20GB reserved
+
+ Successfully replaced 32 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~176.2M
+  Final: GPU 59.44GB | RAM 12.5%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment efficient_4x1: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: baseline_8x2
+======================================================================
+
+Description: Standard 8 experts, top-2 routing, all layers
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: all
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.04s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 32 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 53.26GB alloc / 54.11GB reserved
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 55.80GB alloc / 56.71GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 58.35GB alloc / 59.20GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 60.89GB alloc / 61.79GB reserved
+  Layer 17/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 63.44GB alloc / 64.35GB reserved
+  Layer 21/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 65.98GB alloc / 66.94GB reserved
+  Layer 25/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 68.53GB alloc / 69.53GB reserved
+  Layer 29/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 71.07GB alloc / 72.15GB reserved
+
+ Successfully replaced 32 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 71.07GB | RAM 12.5%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment baseline_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: top1_8x1
+======================================================================
+
+Description: Top-1 routing: 8 experts, single expert per token
+Configuration:
+  Experts: 8
+  Experts per token: 1
+  Layer placement: all
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.15s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 1
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 32 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 53.26GB alloc / 54.29GB reserved
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 55.80GB alloc / 56.86GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 58.35GB alloc / 59.41GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 60.89GB alloc / 62.03GB reserved
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 63.44GB alloc / 64.58GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 65.98GB alloc / 67.16GB reserved
+  Layer 25/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 68.53GB alloc / 69.77GB reserved
+  Layer 29/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 71.07GB alloc / 72.28GB reserved
+
+ Successfully replaced 32 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~176.2M
+  Final: GPU 71.07GB | RAM 12.4%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment top1_8x1: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: large_16x2
+======================================================================
+
+Description: Large: 16 experts, top-2 routing
+Configuration:
+  Experts: 16
+  Experts per token: 2
+  Layer placement: all
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.06s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 16
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 32 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 56.17GB alloc / 57.46GB reserved
+  Layer 5/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 61.62GB alloc / 62.94GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 67.07GB alloc / 68.34GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 72.53GB alloc / 73.88GB reserved
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 77.98GB alloc / 79.33GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 83.44GB alloc / 84.86GB reserved
+  Layer 25/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 16 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 88.89GB alloc / 90.31GB reserved
+  Layer 29/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU...  Error in experiment large_16x2: CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 83.69 MiB is free. Process 2456344 has 44.96 GiB memory in use. Including non-PyTorch memory, this process has 94.74 GiB memory in use. Of the allocated memory 92.76 GiB is allocated by PyTorch, and 1.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 32, in run_experiment
+    moe_model = self._create_moe_model(config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 162, in _create_moe_model
+    model = replace_ffn_with_moe(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/47472801.py", line 142, in replace_ffn_with_moe
+    moe_layer = MoELayer(
+                ^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 78, in __init__
+    LinearClass(intermediate_size, hidden_size, bias=False, **linear_kwargs)
+  File "/root/shit/.venv/lib/python3.12/site-packages/bitsandbytes/nn/modules.py", line 468, in __init__
+    super().__init__(input_features, output_features, bias, device)
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 109, in __init__
+    torch.empty((out_features, in_features), **factory_kwargs)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 83.69 MiB is free. Process 2456344 has 44.96 GiB memory in use. Including non-PyTorch memory, this process has 94.74 GiB memory in use. Of the allocated memory 92.76 GiB is allocated by PyTorch, and 1.31 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+======================================================================
+RUNNING EXPERIMENT: sparse_8x2
+======================================================================
+
+Description: Sparse placement: experts every 2nd layer
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: every_2
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.35s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 16 layers: [0, 2, 4, 6, 8]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 25/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 29/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+
+ Successfully replaced 16 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 60.89GB | RAM 12.5%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment sparse_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: placement_early_8x2
+======================================================================
+
+Description: Early placement: Experts in first 16 layers only
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: selected
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.49s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 16 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 53.26GB alloc / 54.48GB reserved
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 55.80GB alloc / 57.02GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 58.35GB alloc / 59.59GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 60.89GB alloc / 62.18GB reserved
+
+ Successfully replaced 16 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 60.89GB | RAM 12.5%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment placement_early_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: placement_middle_8x2
+======================================================================
+
+Description: Middle placement: Experts in middle 16 layers (8-23)
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: selected
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.44s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 16 layers: [8, 9, 10, 11, 12]...
+
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 53.26GB alloc / 54.44GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 55.80GB alloc / 56.93GB reserved
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 58.35GB alloc / 59.57GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 60.89GB alloc / 62.14GB reserved
+
+ Successfully replaced 16 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 60.89GB | RAM 12.5%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment placement_middle_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: placement_late_8x2
+======================================================================
+
+Description: Late placement: Experts in last 16 layers only
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: selected
+Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.55s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 16 layers: [16, 17, 18, 19, 20]...
+
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 53.26GB alloc / 54.43GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 55.80GB alloc / 56.89GB reserved
+  Layer 25/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 58.35GB alloc / 59.48GB reserved
+  Layer 29/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 60.89GB alloc / 62.04GB reserved
+
+ Successfully replaced 16 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 60.89GB | RAM 12.6%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment placement_late_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: routing_noisy_8x2
+======================================================================
+
+Description: Noisy routing: 8 experts, top-2, high jitter (0.2)
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: all
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.43s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 32 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 53.26GB alloc / 54.27GB reserved
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 55.80GB alloc / 56.82GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 58.35GB alloc / 59.44GB reserved
+  Layer 13/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 60.89GB alloc / 62.05GB reserved
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 63.44GB alloc / 64.67GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 65.98GB alloc / 67.25GB reserved
+  Layer 25/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 68.53GB alloc / 69.82GB reserved
+  Layer 29/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 71.07GB alloc / 72.41GB reserved
+
+ Successfully replaced 32 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 71.07GB | RAM 12.5%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment routing_noisy_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: balanced_8x2
+======================================================================
+
+Description: Load Balanced: 8 experts, top-2, high aux loss coef (0.05)
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: all
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.47s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 32 layers: [0, 1, 2, 3, 4]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.4%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 53.26GB alloc / 54.58GB reserved
+  Layer 5/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 6/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 7/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 8/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 8] GPU: 55.80GB alloc / 57.11GB reserved
+  Layer 9/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 10/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 11/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 12/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 12] GPU: 58.35GB alloc / 59.66GB reserved
+  Layer 13/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 14/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 15/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 60.89GB alloc / 62.23GB reserved
+  Layer 17/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 19/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 20/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 20] GPU: 63.44GB alloc / 64.79GB reserved
+  Layer 21/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 22/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 23/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 24/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 24] GPU: 65.98GB alloc / 67.34GB reserved
+  Layer 25/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 26/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 27/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 28/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 28] GPU: 68.53GB alloc / 69.85GB reserved
+  Layer 29/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 71.07GB alloc / 72.47GB reserved
+
+ Successfully replaced 32 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 71.07GB | RAM 12.6%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment balanced_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+
+======================================================================
+RUNNING EXPERIMENT: placement_mixed_8x2
+======================================================================
+
+Description: Mixed placement: Experts in first 4, middle 4, and last 4 layers
+Configuration:
+  Experts: 8
+  Experts per token: 2
+  Layer placement: selected
+Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.47s/it]
+
+Model configuration:
+  Hidden size: 4096
+  Original intermediate size: 14336
+  MoE intermediate size: 14336
+  Number of layers: 32
+  Experts per layer: 8
+  Experts per token: 2
+
+ Using GPU for weight processing
+  GPU Memory: 150.11 GB
+  Compute dtype: torch.float32
+
+  Processing 12 layers: [0, 1, 2, 3, 14]...
+
+  Layer 1/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 2/32 (RAM: 12.6%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 3/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 4/32 (RAM: 12.5%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 4] GPU: 53.26GB alloc / 54.41GB reserved
+  Layer 15/32 (RAM: 12.7%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 16/32 (RAM: 12.7%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 16] GPU: 54.53GB alloc / 55.67GB reserved
+  Layer 17/32 (RAM: 12.7%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 18/32 (RAM: 12.7%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 29/32 (RAM: 12.7%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 30/32 (RAM: 12.8%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 31/32 (RAM: 12.8%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+  Layer 32/32 (RAM: 12.8%):
+    Extracting weights to CPU... Done
+    Deleting original MLP... Done
+    Creating MoE layer on CPU... Done
+    Copying weights to 8 experts... Done
+    Moving to GPU... Done
+    [Layer 32] GPU: 58.35GB alloc / 59.50GB reserved
+
+ Successfully replaced 12 FFN layers with MoE
+  Expert dispatch: Efficient sparse routing
+  CPU offloading: ENABLED (keeps experts on CPU, moves to GPU on-demand)
+  Params per expert: ~176.2M
+  Active params per token: ~352.3M
+  Final: GPU 58.35GB | RAM 12.7%
+
+Phase 1: Pre-training Evaluation (n=1000)...
+  Running MMLU evaluation (n=1000)...
+ Error in experiment placement_mixed_8x2: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+Traceback (most recent call last):
+  File "/tmp/ipykernel_2598520/3059267096.py", line 55, in <module>
+    results = runner.run_experiment(config, max_samples=1000)  # Changed from 5000 to 1000
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 36, in run_experiment
+    pre_results = self._evaluate_comprehensive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/923645300.py", line 228, in _evaluate_comprehensive
+    mmlu_results = evaluate_mmlu_comprehensive(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/2337916065.py", line 81, in evaluate_mmlu_comprehensive
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 433, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 369, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/transformers/models/mistral/modeling_mistral.py", line 246, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_2598520/179104744.py", line 107, in forward
+    router_logits = self.router(hidden_states_reshaped)  # [B*S, num_experts]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: c10::Half != float
+VARIANT EXPERIMENT COMPARISON
+No results to compare yet.
+
+ Variant experiments complete!

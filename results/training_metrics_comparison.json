@@ -1,0 +1,35 @@
+{
+  "dense_kd": {
+    "final_ntp_loss": 1.9601815938949585,
+    "final_kd_loss": 10.042472839355469,
+    "final_total_loss": 6.001327037811279,
+    "avg_ntp_loss": 2.024422988295555,
+    "avg_kd_loss": 13.013339006900788,
+    "avg_total_loss": 7.518881022930145,
+    "avg_kd_ntp_ratio": 6.521088101735859,
+    "avg_kd_total_ratio": 1.6909272355607243,
+    "kd_alpha": 0.5,
+    "temperature": 4.0,
+    "total_steps": 40,
+    "model_name": "dense_kd"
+  },
+  "moe_kd": {
+    "final_ntp_loss": 1.9581234455108643,
+    "final_kd_loss": 0.0,
+    "final_aux_loss": 0.0,
+    "final_routing_kd_loss": 0.0,
+    "final_total_loss": 0.8316174745559692,
+    "avg_ntp_loss": 1.944679793715477,
+    "avg_kd_loss": 13.598273356817662,
+    "avg_aux_loss": 0.0,
+    "avg_routing_kd_loss": 0.0,
+    "avg_total_loss": 7.731379374861717,
+    "avg_kd_ntp_ratio": 7.733266877242353,
+    "avg_kd_total_ratio": 0.7555237885909054,
+    "kd_alpha": 0.5,
+    "temperature": 4.0,
+    "routing_kd_weight": 0.0,
+    "total_steps": 40,
+    "model_name": "moe_kd"
+  }
+}

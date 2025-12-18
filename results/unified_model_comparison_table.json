@@ -1,0 +1,54 @@
+[
+  {
+    "Model": "Dense Baseline (Standard)",
+    "Accuracy": 0.659,
+    "Top-2 Accuracy": 0.837,
+    "Perplexity": null,
+    "ECE": 0.07960961914062498,
+    "Throughput (samples/s)": 11.02030501940823,
+    "Latency (ms/token)": 0.3190158787526803,
+    "Tokens/sec": 3134.640206343015,
+    "FLOPs (G)": 8796.093022208,
+    "Parameters (B)": 7.241732096,
+    "GPU Memory (GB)": 7.026926040649414
+  },
+  {
+    "Model": "Dense with KD",
+    "Accuracy": 0.663,
+    "Top-2 Accuracy": 0.832,
+    "Perplexity": null,
+    "ECE": 0.07826098141074184,
+    "Throughput (samples/s)": 24.145180793049988,
+    "Latency (ms/token)": 0.1972428311727017,
+    "Tokens/sec": 5069.892751257566,
+    "FLOPs (G)": 8796.093022208,
+    "Parameters (B)": 3.794014208,
+    "GPU Memory (GB)": 16.34663963317871
+  },
+  {
+    "Model": "MoE Standard Training",
+    "Accuracy": 0.697,
+    "Top-2 Accuracy": 0.856,
+    "Perplexity": null,
+    "ECE": 0.04439617943763735,
+    "Throughput (samples/s)": 19.52560228905033,
+    "Latency (ms/token)": 0.18426037501997092,
+    "Tokens/sec": 5427.102815196245,
+    "FLOPs (G)": 3023.656976384,
+    "Parameters (B)": 46.716424448,
+    "GPU Memory (GB)": 95.07660341262817
+  },
+  {
+    "Model": "MoE Knowledge Distillation",
+    "Accuracy": 0.661,
+    "Top-2 Accuracy": 0.836,
+    "Perplexity": 6.0,
+    "ECE": 0.0763,
+    "Throughput (samples/s)": 18.74,
+    "Latency (ms/token)": 0.0543,
+    "Tokens/sec": null,
+    "FLOPs (G)": null,
+    "Parameters (B)": 46.716424448,
+    "GPU Memory (GB)": 97.29
+  }
+]

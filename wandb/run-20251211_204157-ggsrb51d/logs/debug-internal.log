@@ -1,0 +1,7 @@
+{"time":"2025-12-11T20:41:57.722095951Z","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-11T20:41:57.933160575Z","level":"INFO","msg":"stream: created new stream","id":"ggsrb51d"}
+{"time":"2025-12-11T20:41:57.933268045Z","level":"INFO","msg":"handler: started","stream_id":"ggsrb51d"}
+{"time":"2025-12-11T20:41:57.933381325Z","level":"INFO","msg":"stream: started","id":"ggsrb51d"}
+{"time":"2025-12-11T20:41:57.933404496Z","level":"INFO","msg":"sender: started","stream_id":"ggsrb51d"}
+{"time":"2025-12-11T20:41:57.933407806Z","level":"INFO","msg":"writer: started","stream_id":"ggsrb51d"}
+{"time":"2025-12-11T22:26:13.226555125Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/omondistanley82-student/mistral-mmlu-baseline_kd/ggsrb51d/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

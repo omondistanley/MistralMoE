@@ -1,0 +1,5 @@
+2025-12-17 20:24:01,094 INFO    MainThread:863134 [wandb_init.py:setup_run_log_directory():714] Logging user logs to /root/shit/wandb/run-20251217_202401-31gryhnq/logs/debug.log
+2025-12-17 20:24:01,094 INFO    MainThread:863134 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to /root/shit/wandb/run-20251217_202401-31gryhnq/logs/debug-internal.log
+2025-12-17 20:24:01,094 INFO    MainThread:863134 [wandb_init.py:init():841] calling init triggers
+2025-12-17 20:24:01,094 INFO    MainThread:863134 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'model': 'mistralai/Mistral-7B-v0.1', 'max_length': 512, 'batch_size': 1, 'gradient_accumulation_steps': 4, 'epochs': 2, 'learning_rate': 2e-05, 'quantization': '4-bit', 'lora_r': 8, 'lora_alpha': 16, '_wandb': {}}

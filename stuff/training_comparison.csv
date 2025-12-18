@@ -1,0 +1,8 @@
+Metric,Before Training,After Training,Improvement
+MMLU Accuracy,0.6050,0.6050,+0.00%
+Top-2 Accuracy,0.7970,0.7970,+0.00%
+ECE (Calibration),0.0612,0.0612,+0.0000
+Throughput (samples/sec),10.21,10.27,+0.05
+Avg Latency (sec),0.0979,0.0974,-0.0005
+Correct Predictions,605,605,+0
+Total Samples,1000,1000,-

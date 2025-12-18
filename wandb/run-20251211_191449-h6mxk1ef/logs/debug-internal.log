@@ -1,0 +1,7 @@
+{"time":"2025-12-11T19:14:49.398873655Z","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-11T19:14:49.621070447Z","level":"INFO","msg":"stream: created new stream","id":"h6mxk1ef"}
+{"time":"2025-12-11T19:14:49.621184506Z","level":"INFO","msg":"handler: started","stream_id":"h6mxk1ef"}
+{"time":"2025-12-11T19:14:49.621211706Z","level":"INFO","msg":"stream: started","id":"h6mxk1ef"}
+{"time":"2025-12-11T19:14:49.621224886Z","level":"INFO","msg":"sender: started","stream_id":"h6mxk1ef"}
+{"time":"2025-12-11T19:14:49.621221436Z","level":"INFO","msg":"writer: started","stream_id":"h6mxk1ef"}
+{"time":"2025-12-11T20:10:20.034189094Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/omondistanley82-student/mistral-mmlu-baseline_kd/h6mxk1ef/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}

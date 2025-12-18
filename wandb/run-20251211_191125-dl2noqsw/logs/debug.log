@@ -1,0 +1,392 @@
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_setup.py:_flush():80] Current SDK version is 0.23.1
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_setup.py:_flush():80] Configure stats pid to 291210
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_setup.py:_flush():80] Loading settings from /root/.config/wandb/settings
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_setup.py:_flush():80] Loading settings from /root/shit/wandb/settings
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_init.py:setup_run_log_directory():714] Logging user logs to /root/shit/wandb/run-20251211_191125-dl2noqsw/logs/debug.log
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to /root/shit/wandb/run-20251211_191125-dl2noqsw/logs/debug-internal.log
+2025-12-11 19:11:25,769 INFO    MainThread:291210 [wandb_init.py:monkeypatch_ipython():633] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f18ec1d3230>
+2025-12-11 19:11:25,770 INFO    MainThread:291210 [wandb_init.py:init():841] calling init triggers
+2025-12-11 19:11:25,770 INFO    MainThread:291210 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-12-11 19:11:25,770 INFO    MainThread:291210 [wandb_init.py:init():889] starting backend
+2025-12-11 19:11:26,054 INFO    MainThread:291210 [wandb_init.py:init():892] sending inform_init request
+2025-12-11 19:11:26,056 INFO    MainThread:291210 [wandb_init.py:init():900] backend started and connected
+2025-12-11 19:11:26,057 INFO    MainThread:291210 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2025-12-11 19:11:26,060 INFO    MainThread:291210 [wandb_init.py:init():970] updated telemetry
+2025-12-11 19:11:26,086 INFO    MainThread:291210 [wandb_init.py:init():994] communicating run to backend with 90.0 second timeout
+2025-12-11 19:11:26,565 INFO    MainThread:291210 [wandb_init.py:init():1041] starting run threads in backend
+2025-12-11 19:11:26,636 INFO    MainThread:291210 [wandb_run.py:_console_start():2521] atexit reg
+2025-12-11 19:11:26,649 INFO    MainThread:291210 [wandb_run.py:_redirect():2369] redirect: wrap_raw
+2025-12-11 19:11:26,649 INFO    MainThread:291210 [wandb_run.py:_redirect():2438] Wrapping output streams.
+2025-12-11 19:11:26,649 INFO    MainThread:291210 [wandb_run.py:_redirect():2461] Redirects installed.
+2025-12-11 19:11:26,651 INFO    MainThread:291210 [wandb_init.py:init():1081] run started, returning control to user process
+2025-12-11 19:12:40,399 INFO    wandb-AsyncioManager-main:291210 [service_client.py:_forward_responses():80] Reached EOF.
+2025-12-11 19:12:40,400 INFO    wandb-AsyncioManager-main:291210 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-12-11 19:12:40,411 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-12-11 19:12:40,423 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1075, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-12-11 19:12:40,424 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1075, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-12-11 19:12:40,479 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:12:40,480 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/IPython/core/events.py", line 96, in trigger
+    func(*args, **kwargs)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 604, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 811, in publish_resume
+    self._publish_resume(resume)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 334, in _publish_resume
+    self._publish(rec)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1075, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-12-11 19:12:40,483 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/IPython/core/events.py", line 96, in trigger
+    func(*args, **kwargs)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 604, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 811, in publish_resume
+    self._publish_resume(resume)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 334, in _publish_resume
+    self._publish(rec)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1075, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-12-11 19:12:40,527 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/IPython/core/events.py", line 96, in trigger
+    func(*args, **kwargs)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 604, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 811, in publish_resume
+    self._publish_resume(resume)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 334, in _publish_resume
+    self._publish(rec)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1075, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-12-11 19:12:40,604 ERROR   wandb-AsyncioManager-main:291210 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/IPython/core/events.py", line 96, in trigger
+    func(*args, **kwargs)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 604, in _post_run_cell_hook
+    self.backend.interface.publish_resume()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 811, in publish_resume
+    self._publish_resume(resume)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 334, in _publish_resume
+    self._publish(rec)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/root/shit/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib/python3.12/asyncio/streams.py", line 380, in drain
+    raise exc
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1075, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-12-11 19:12:56,084 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:12:56,084 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:12:56,179 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:12:56,306 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:12:56,306 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:12:57,117 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:12:57,335 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:12:57,335 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:12:57,798 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:12:58,016 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:12:58,016 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:12:58,950 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:12:59,068 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:12:59,068 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:12:59,179 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:12:59,295 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:12:59,296 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:00,205 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:00,321 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:00,321 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:01,285 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:01,403 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:01,403 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:07,907 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:08,023 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:08,024 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:08,136 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:08,262 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:08,263 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:08,420 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:08,540 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:08,540 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:08,653 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:08,773 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:08,773 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:08,886 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:09,351 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:09,351 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend
+2025-12-11 19:13:09,465 INFO    MainThread:291210 [wandb_init.py:_post_run_cell_hook():603] [no run ID] resuming backend
+2025-12-11 19:13:09,597 INFO    MainThread:291210 [jupyter.py:save_ipynb():359] [no run ID] not saving jupyter notebook
+2025-12-11 19:13:09,597 INFO    MainThread:291210 [wandb_init.py:_pre_run_cell_hook():592] [no run ID] pausing backend

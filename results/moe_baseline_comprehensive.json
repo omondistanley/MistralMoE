@@ -1,0 +1,17 @@
+{
+  "model_name": "moe_baseline",
+  "accuracy": 0.664,
+  "top2_accuracy": 0.831,
+  "ece": 0.08158789062500002,
+  "flops": 3023656976384.0,
+  "tokens_per_second": 6569.859122167177,
+  "ms_per_token": 0.15221026530476556,
+  "samples_per_second": 23.099958236936732,
+  "total_params": 46702792960,
+  "active_params": 46702792960,
+  "trainable_params": 46702792960,
+  "sparsity_ratio": 1.0,
+  "model_size_mb": 89078.50854492188,
+  "gpu_memory_allocated_gb": 94.01864862442017,
+  "gpu_memory_reserved_gb": 94.2890625
+}

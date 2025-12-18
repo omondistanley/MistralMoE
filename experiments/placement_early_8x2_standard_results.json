@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.697,
+  "top2_accuracy": 0.864,
+  "ece": 0.03868021216988561,
+  "flops": 3023656976384.0,
+  "tokens_per_second": 8839.588763824726,
+  "ms_per_token": 0.11312743462596542,
+  "samples_per_second": 30.40166723010292,
+  "total_time": 1.6446466445922852,
+  "total_params": 26985894016,
+  "active_params": 26985894016,
+  "trainable_params": 13631488,
+  "sparsity_ratio": 1.0,
+  "model_size_mb": 51497.50830078125,
+  "gpu_memory_allocated_gb": 50.85538053512573,
+  "gpu_memory_reserved_gb": 52.169921875,
+  "phase": "standard_training",
+  "training_mode": "standard",
+  "pre_train_accuracy": 0.666,
+  "accuracy_gain": 0.030999999999999917,
+  "timestamp": 1766005551.611196
+}

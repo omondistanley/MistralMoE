@@ -1,0 +1,6 @@
+{"time":"2025-12-16T17:14:45.989020461Z","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-16T17:14:46.306715462Z","level":"INFO","msg":"stream: created new stream","id":"djktygae"}
+{"time":"2025-12-16T17:14:46.306811432Z","level":"INFO","msg":"handler: started","stream_id":"djktygae"}
+{"time":"2025-12-16T17:14:46.306889962Z","level":"INFO","msg":"stream: started","id":"djktygae"}
+{"time":"2025-12-16T17:14:46.306900621Z","level":"INFO","msg":"writer: started","stream_id":"djktygae"}
+{"time":"2025-12-16T17:14:46.306903941Z","level":"INFO","msg":"sender: started","stream_id":"djktygae"}

@@ -1,0 +1,30 @@
+Model,Phase,Metric,Value,Frequency,Purpose
+Dense Kd,Training,KD Loss (KL Div),10.042472839355469,Every logging step,Monitor distillation quality
+Dense Kd,Training,NTP Loss,1.9601815938949585,Every logging step,Monitor supervised learning
+Dense Kd,Training,KD/NTP Ratio,6.521088101735859,Every logging step,Understand KD contribution
+Dense Kd,Training,KD/Total Ratio,1.6909272355607243,Every logging step,Understand KD contribution
+Moe Kd,Training,KD Loss (KL Div),0.0,Every logging step,Monitor distillation quality
+Moe Kd,Training,NTP Loss,1.9581234455108643,Every logging step,Monitor supervised learning
+Moe Kd,Training,KD/NTP Ratio,7.733266877242353,Every logging step,Understand KD contribution
+Moe Kd,Training,KD/Total Ratio,0.7555237885909054,Every logging step,Understand KD contribution
+Moe Kd,Training,Aux Loss (MoE),0.0,Every logging step,MoE load balancing
+Moe Standard,Training,KD Loss (KL Div),0.0,Every logging step,Monitor distillation quality
+Moe Standard,Training,NTP Loss,1.765297770500183,Every logging step,Monitor supervised learning
+Moe Standard,Training,KD/NTP Ratio,0.0,Every logging step,Understand KD contribution
+Moe Standard,Training,KD/Total Ratio,0.0,Every logging step,Understand KD contribution
+Moe Standard,Training,Aux Loss (MoE),0.0,Every logging step,MoE load balancing
+Dense Kd,Post-Training,Accuracy Retention Rate,98.644578313253,Once,Teacher-student comparison
+Dense Kd,Post-Training,Top-2 Accuracy Retention,99.39831528279181,Once,Teacher-student comparison
+Dense Kd,Post-Training,Teacher-Student Accuracy Gap,0.009000000000000008,Once,Teacher-student comparison
+Dense Kd,Post-Training,Distillation Score,0.23126800579414158,Once,Composite efficiency metric
+Dense Kd,Post-Training,Knowledge Transfer Efficiency,1.8828543323880715,Once,Efficiency analysis
+Dense Kd,Post-Training,Calibration Improvement,0.019469712704420113,Once,Calibration analysis
+Dense Kd,Post-Training,KD Effectiveness Score,0.849063805377591,Once,Overall KD effectiveness
+Moe Kd,Post-Training,Accuracy Retention Rate,99.69879518072288,Once,Teacher-student comparison
+Moe Kd,Post-Training,Top-2 Accuracy Retention,100.60168471720819,Once,Teacher-student comparison
+Moe Kd,Post-Training,Teacher-Student Accuracy Gap,0.0020000000000000018,Once,Teacher-student comparison
+Moe Kd,Post-Training,Distillation Score,-2.7270067626423478,Once,Composite efficiency metric
+Moe Kd,Post-Training,Knowledge Transfer Efficiency,0.15454777918554521,Once,Efficiency analysis
+Moe Kd,Post-Training,Calibration Improvement,0.008858655363321352,Once,Calibration analysis
+Moe Kd,Post-Training,KD Effectiveness Score,0.7460611283497199,Once,Overall KD effectiveness
+Moe Kd,Post-Training,KD Improvement Over No-KD,-0.03599999999999992,Once,KD benefit analysis
