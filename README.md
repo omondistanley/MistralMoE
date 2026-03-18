@@ -1,6 +1,7 @@
 # MistralMoE: Sparse Upcycling & Knowledge Distillation for Mixture of Experts
 
 **Link to paper:** [Knowledge Distillation for Scalable Sparse Upcycled Mixture of Experts](https://github.com/omondistanley/MistralMoE/blob/master/Mixtral%20Final%20Papaer.pdf)
+
 A research framework for converting **Mistral-7B-v0.1** into Mixture of Experts (MoE) architectures and training them with **Knowledge Distillation (KD)**. Experiments are benchmarked on the MMLU dataset across 10+ architectural variants, measuring accuracy, FLOPs, throughput, and memory efficiency.
 
 ---
