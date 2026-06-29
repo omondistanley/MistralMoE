@@ -4,6 +4,8 @@
 
 A research framework for converting **Mistral-7B-v0.1** into Mixture of Experts (MoE) architectures and training them with **Knowledge Distillation (KD)**. Experiments are benchmarked on the MMLU dataset across 10+ architectural variants, measuring accuracy, FLOPs, throughput, and memory efficiency.
 
+-- update: explore how expert parallelism ties to the project and research in context of MoE and Micro neural architecture search. More specifically, focus on how the different configurations of the experts and expert parallelism would influence the NAS(which would be helpful in search space optimization for the best scalable MoE model--dependent on the compute, throughput, accuracy and model performance change/improvement). For instance, in this case we tested just a small subset of the possible architectural variants, based on expert count and placement in the model's layers, routing strategy. 
+
 ---
 
 ## Table of Contents
