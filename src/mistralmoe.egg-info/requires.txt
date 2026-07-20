@@ -1,0 +1,15 @@
+torch
+transformers
+peft
+datasets
+accelerate
+bitsandbytes
+wandb
+kagglehub
+scikit-learn
+pandas
+matplotlib
+seaborn
+tqdm
+psutil
+numpy

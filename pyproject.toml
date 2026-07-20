@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mistralmoe"
+version = "0.1.0"
+description = "Sparse upcycling and Knowledge Distillation for Mixture-of-Experts MMLU experiments on Mistral-7B"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers",
+    "peft",
+    "datasets",
+    "accelerate",
+    "bitsandbytes",
+    "wandb",
+    "kagglehub",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "psutil",
+    "numpy",
+]
+
+# CLI entrypoints live in scripts/ (outside the installed package) and are run
+# directly, e.g. `python scripts/run_variant_experiments.py --list`.
+
+[tool.setuptools.packages.find]
+where = ["src"]

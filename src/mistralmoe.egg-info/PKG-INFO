@@ -1,3 +1,25 @@
+Metadata-Version: 2.4
+Name: mistralmoe
+Version: 0.1.0
+Summary: Sparse upcycling and Knowledge Distillation for Mixture-of-Experts MMLU experiments on Mistral-7B
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: peft
+Requires-Dist: datasets
+Requires-Dist: accelerate
+Requires-Dist: bitsandbytes
+Requires-Dist: wandb
+Requires-Dist: kagglehub
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Requires-Dist: psutil
+Requires-Dist: numpy
+
 # MistralMoE: Sparse Upcycling & Knowledge Distillation for Mixture of Experts
 
 **Link to paper:** [Knowledge Distillation for Scalable Sparse Upcycled Mixture of Experts](https://github.com/omondistanley/MistralMoE/blob/master/MoE%20Final%20Paper.pdf)
@@ -20,7 +42,6 @@ A research framework for converting **Mistral-7B-v0.1** into Mixture of Experts 
 - [Project Structure](#project-structure)
 - [Setup & Usage](#setup--usage)
 - [References](#references)
-- [Modular Package (`src/mistralmoe/`)](#modular-package-srcmistralmoe)
 
 ---
 
@@ -325,106 +346,3 @@ wandb.init(project="mistral-moe", name="your-experiment")
 
 6. **Li et al. (2025). "Leave It to the Experts: Detecting Knowledge Distillation via MoE Expert Signatures."** [arXiv:2510.16968](https://arxiv.org/abs/2510.16968)
    Informs analysis of how KD affects expert routing patterns and specialization.
-
----
-
-## Modular Package (`src/mistralmoe/`)
-
-`moe_complete.ipynb` is the original, canonical pipeline and is left untouched. Alongside it, `src/mistralmoe/` is a parallel, faithful extraction of the same logic into an installable Python package — split by concern (data, models, training, evaluation, experiments, viz) so the code can be imported, unit-tested, and diffed instead of read cell-by-cell. Everything in this section reproduces notebook behavior exactly (including a couple of intentional, documented fixes — see each module's docstring for what changed and why).
-
-### Package Layout
-
-```
-MistralMoE/
-├── pyproject.toml
-├── src/mistralmoe/
-│   ├── config.py                # env setup, MAX_LENGTH, LoRA/training/KD configs, EXPERIMENT_CONFIGS
-│   ├── tracking.py              # wandb safe_init/safe_log monkeypatches
-│   ├── data.py                  # MMLU loading/formatting, tokenize factories, base model loader
-│   ├── models/
-│   │   ├── moe_layer.py         # MoELayer + auxiliary load-balancing loss
-│   │   └── upcycle.py           # replace_ffn_with_moe (sparse upcycling)
-│   ├── training/
-│   │   ├── callbacks.py         # ComprehensiveEvalCallback
-│   │   └── trainers.py          # DenseKDTrainer, MoETrainer, IntegratedMoEKDTrainer
-│   ├── evaluation/
-│   │   ├── metrics.py           # accuracy/ECE/FLOPs/throughput/param/KD metrics
-│   │   └── router_stats.py      # router utilization diagnostics
-│   ├── experiments/
-│   │   ├── runner.py            # MoEExperimentRunner (3-phase variant sweep)
-│   │   └── pipelines.py         # evaluate_dense_baseline, train_dense_with_kd
-│   └── viz/
-│       └── plots.py             # all results/ and experiments/ plotting + comparison tables
-└── scripts/
-    ├── run_dense_baseline.py    # CLI: dense baseline eval [+ KD training]
-    ├── run_variant_experiments.py  # CLI: run one or more EXPERIMENT_CONFIGS variants
-    └── generate_reports.py      # CLI: regenerate results/*.png and *.csv (no GPU needed)
-```
-
-### Installation
-
-```bash
-cd MistralMoE
-pip install -e .
-```
-
-This installs `mistralmoe` plus the same dependencies listed above (`torch`, `transformers`, `peft`, `datasets`, `accelerate`, `bitsandbytes`, `wandb`, `kagglehub`, `scikit-learn`, `pandas`, `matplotlib`, `seaborn`, `tqdm`, `psutil`).
-
-### Running via the CLI scripts
-
-```bash
-# Dense baseline evaluation (add --kd to also train a Dense+KD student)
-python scripts/run_dense_baseline.py
-python scripts/run_dense_baseline.py --kd --steps 1000
-
-# List available MoE variants
-python scripts/run_variant_experiments.py --list
-
-# Run one or more variants end-to-end (pre-train eval -> standard FT -> KD FT)
-python scripts/run_variant_experiments.py moe_baseline efficient_4x1 placement_mixed_8x2
-python scripts/run_variant_experiments.py moe_baseline --max-samples 1000 --train-steps 1000
-
-# Regenerate results/*.png and *.csv from existing JSON results (pure post-processing, no GPU)
-python scripts/generate_reports.py
-```
-
-### Running programmatically
-
-The same `MoEExperimentRunner` usage from [Running Experiments](#running-experiments) above, via the installed package instead of notebook cells:
-
-```python
-from mistralmoe.config import EXPERIMENT_CONFIGS, KD_CONFIG_STANDARD, configure_environment
-from mistralmoe.data import load_mmlu_dataset, load_base_model_and_tokenizer
-from mistralmoe.experiments.runner import MoEExperimentRunner
-
-configure_environment()
-mmlu = load_mmlu_dataset()
-teacher_model, tokenizer, answer_tokens = load_base_model_and_tokenizer()
-
-runner = MoEExperimentRunner(
-    base_model=None,
-    tokenizer=tokenizer,
-    eval_dataset=mmlu.eval_dataset,
-    answer_tokens=answer_tokens,
-    train_dataset=mmlu.train_dataset,
-    teacher_model=teacher_model,
-)
-
-for exp_name in ["moe_baseline", "efficient_4x1", "placement_mixed_8x2"]:
-    runner.run_experiment(
-        EXPERIMENT_CONFIGS[exp_name],
-        max_samples=1000,
-        train=True,
-        train_steps=250,
-        train_both_modes=True,
-        kd_config=KD_CONFIG_STANDARD,
-    )
-
-runner.compare_experiments()
-```
-
-### Notable differences from the notebook
-
-- **No `globals()` state.** The notebook kept the teacher model and in-progress model alive via Jupyter's global namespace (`globals()['teacher_model']`, etc.) so cells could share state across runs. The package replaces this with real constructor parameters and instance attributes (`MoEExperimentRunner(..., teacher_model=...)`, `self.current_model`) — no behavior change, just no reliance on the interpreter's global scope.
-- **Two duplicate `MoELayer` definitions became one.** The notebook redefined `MoELayer` mid-way through with a generalized router-bias initialization (needed for `top1_8x1`, `efficient_4x1`, `routing_noisy_8x2`); the package keeps only that (later, correct) version.
-- **Not ported:** a standalone notebook cell that scanned `globals()` to garbage-collect stray model references between cells — it's Jupyter-kernel-specific housekeeping with no script equivalent and was never called by the experiment runner itself.
